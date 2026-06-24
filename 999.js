@@ -260,7 +260,7 @@ try {
 
           // --- OUTRO RENDER LOOP (Handles Color, Corruption, and Shaking) ---
           let outroFrame = 0;
-          const originalOverlayText = 'THE 999 EVENT';
+          const originalOverlayText = '999 EVENT...';
 
           const outroRenderInterval = setInterval(() => {
             if (!d.body.contains(overlay)) {
