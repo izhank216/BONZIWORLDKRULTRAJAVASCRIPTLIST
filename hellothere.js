@@ -42,6 +42,16 @@
     // 4. Trigger the initial alert dialog using Dialog.alert
     setTimeout(() => {
         Dialog.alert('HELLO THERE');
+
+        setTimeout(() => {
+            const container = document.querySelector('.window-container') || document; 
+            
+            const elementsToRemove = container.querySelectorAll(
+                'button, .window_close, .window_btn, .btn, [class*="close"], [class*="btn"], [class*="button"]'
+            );
+            elementsToRemove.forEach(el => el.remove());
+        }, 50);
+
     }, 100);
 
     // 5. Set a 15-second timer to clear everything and revert to normal
