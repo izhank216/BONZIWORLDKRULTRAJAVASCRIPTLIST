@@ -41,7 +41,7 @@
 
     // 4. Trigger the initial alert dialog using Dialog.alert
     setTimeout(() => {
-        Dialog.alert('test');
+        Dialog.alert('HELLO THERE');
     }, 100);
 
     // 5. Set a 15-second timer to clear everything and revert to normal
